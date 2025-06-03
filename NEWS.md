@@ -1,3 +1,7 @@
+# ecmwfr 2.0.4
+
+* fix R6 class clonable messaging
+
 # ecmwfr 2.0.3
 
 * fix of Addin conversion issue (edge case)
