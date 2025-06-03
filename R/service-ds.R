@@ -2,6 +2,7 @@
 
 ds_service <- R6::R6Class("ecmwfr_ds",
   inherit = service,
+  cloneable = FALSE,
   public = list(
     submit = function() {
       if (private$status != "unsubmitted") {
