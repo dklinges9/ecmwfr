@@ -148,7 +148,7 @@ ds_service <- R6::R6Class("ecmwfr_ds",
         warn_or_error(error_msg, error = fail_is_error)
       }
 
-      private$next_retry <- Sys.time()
+      private$next_retry <- Sys.time() + private$retry
       return(self)
     },
 
